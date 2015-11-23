@@ -1,7 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using Foundation;
-using KissMetrics.iOS.Binding;
+using KissMetrics.iOS;
 
 namespace KissMetrics.iOS.Tests
 {

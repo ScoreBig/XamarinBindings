@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>KissMetrics.iOS.Binding</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>KissMetrics.iOS.Binding</AssemblyName>
+    <AssemblyName>KissMetrics.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

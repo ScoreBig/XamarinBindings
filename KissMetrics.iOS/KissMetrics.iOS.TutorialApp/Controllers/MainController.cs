@@ -1,5 +1,5 @@
 ﻿using UIKit;
-using KissMetrics.iOS.Binding;
+using KissMetrics.iOS;
 using MonoTouch.Dialog;
 using System;
 using Foundation;

@@ -168,12 +168,12 @@ namespace OptimizelyiOS
         // +(void)startOptimizelyWithAPIToken:(NSString *)apiToken launchOptions:(NSDictionary *)launchOptions;
         [Static]
         [Export ("startOptimizelyWithAPIToken:launchOptions:")]
-        void StartOptimizelyWithAPIToken (string apiToken, NSDictionary launchOptions);
+        void StartOptimizelyWithAPIToken (string apiToken, [NullAllowed] NSDictionary launchOptions);
 
         // +(void)startOptimizelyWithAPIToken:(NSString *)apiToken launchOptions:(NSDictionary *)launchOptions experimentsLoadedCallback:(OptimizelySuccessBlock)experimentsLoadedCallback;
         [Static]
         [Export ("startOptimizelyWithAPIToken:launchOptions:experimentsLoadedCallback:")]
-        void StartOptimizelyWithAPIToken (string apiToken, NSDictionary launchOptions, OptimizelySuccessBlock experimentsLoadedCallback);
+        void StartOptimizelyWithAPIToken (string apiToken, [NullAllowed] NSDictionary launchOptions, OptimizelySuccessBlock experimentsLoadedCallback);
 
         // +(void)setValue:(NSString *)tagValue forCustomTag:(NSString *)tagKey;
         [Static]
@@ -366,18 +366,6 @@ namespace OptimizelyiOS
         // -(void)codeTest:(NSString *)codeTestKey withBlocks:(NSDictionary *)blocks defaultBlock:(void (^)(void))defaultBlock __attribute__((deprecated("Use [Optimizely codeTestWithKey: blockOne:...]")));
         [Export ("codeTest:withBlocks:defaultBlock:")]
         void CodeTest (string codeTestKey, NSDictionary blocks, Action defaultBlock);
-
-        // extern NSString *const OptimizelyExperimentVisitedNotification;
-        [Field ("OptimizelyExperimentVisitedNotification", "__Internal")]
-        NSString OptimizelyExperimentVisitedNotification { get; }
-
-        // extern NSString *const OptimizelyNewDataFileLoadedNotification;
-        [Field ("OptimizelyNewDataFileLoadedNotification", "__Internal")]
-        NSString OptimizelyNewDataFileLoadedNotification { get; }
-
-        // extern NSString *const OptimizelyGoalTriggeredNotification;
-        [Field ("OptimizelyGoalTriggeredNotification", "__Internal")]
-        NSString OptimizelyGoalTriggeredNotification { get; }
     }
 
     //[Verify (ConstantsInterfaceAssociation)] //TODO Verify/Refactor

@@ -44,13 +44,35 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb849992935048401</string>
+				<string>fb1679096812377617</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>849992935048401</string>
+	<string>1679096812377617</string>
 	<key>FacebookDisplayName</key>
-	<string>ScoreBig.com - Test</string>
+	<string>Sample App</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fb</string>
+		<string>fbshareextension</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbapi20130214</string>
+		<string>fbapi20130410</string>
+		<string>fbapi20130702</string>
+		<string>fbapi20131010</string>
+		<string>fbapi20131219</string>
+		<string>fbapi20140410</string>
+		<string>fbapi20140116</string>
+		<string>fbapi20150313</string>
+		<string>fbapi20150629</string>
+		<string>fbauth</string>
+		<string>fbauth2</string>
+		<string>fb-messenger-api20140430</string>
+		<string>fb-messenger-platform-20150128</string>
+		<string>fb-messenger-platform-20150218</string>
+		<string>fb-messenger-platform-20150305</string>
+	</array>
 </dict>
 </plist>

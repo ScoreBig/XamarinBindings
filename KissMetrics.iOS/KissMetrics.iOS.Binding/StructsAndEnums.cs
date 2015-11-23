@@ -1,6 +1,6 @@
 ﻿using ObjCRuntime;
 
-namespace KissMetrics.iOS.Binding
+namespace KissMetrics.iOS
 {
   [Native]
   public enum KMARecordCondition : long

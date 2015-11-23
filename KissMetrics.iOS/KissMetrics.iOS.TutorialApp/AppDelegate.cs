@@ -1,6 +1,6 @@
 ﻿using Foundation;
 using UIKit;
-using KissMetrics.iOS.Binding;
+using KissMetrics.iOS;
 
 namespace KissMetrics.iOS.TutorialApp
 {
