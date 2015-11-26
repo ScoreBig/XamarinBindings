@@ -3,6 +3,7 @@ using NUnit.Framework;
 using Foundation;
 using OptimizelyiOS;
 using UIKit;
+using CoreGraphics;
 
 namespace Optimizely.iOS.Xamarin.TutorialApp.Test
 {
@@ -156,6 +157,17 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         }
 
         [Test]
+        public void TrackRevenueWithTwoParameters ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.TrackRevenue (1, "string");
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
         public void RegisterCallbackForVariableWithKey ()
         {
             try {
@@ -167,6 +179,17 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         }
 
         [Test]
+        public void RegisterCallbackForCodeBlockWithKey ()
+        {
+          try {
+              OptimizelyiOS.Optimizely.RegisterCallbackForCodeBlockWithKey (blocksKey, action);
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
         public void RefreshExperiments ()
         {
             try {
@@ -175,6 +198,61 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
                 Assert.Fail (e.Message);
             }
             Assert.Pass ();
+        }
+
+        [Test]
+        public void GetExperimentDataById ()
+        {
+          try {
+              OptimizelyiOS.Optimizely.GetExperimentDataById ("string");
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void IsUserInAudience ()
+        {
+          try {        
+              OptimizelyiOS.Optimizely.IsUserInAudience ("string");
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void ResetUserBucketing ()
+        {
+          try {        
+            OptimizelyiOS.Optimizely.ResetUserBucketing ();
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void ActivateManualExperiment ()
+        {
+          try {        
+            OptimizelyiOS.Optimizely.ActivateManualExperiment ("string");
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void ForceVariation ()
+        {
+          try {        
+            OptimizelyiOS.Optimizely.ForceVariation ("string", "string");
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
         }
 
         [Test]
@@ -340,6 +418,94 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
                 Assert.Fail (e.Message);
             }
             Assert.Pass ();
+        }
+
+        [Test]
+        public void ActivateLocalyticsIntegration ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.ActivateLocalyticsIntegration ();
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void StringForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().StringForKey ("string", "string");
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void ColorForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().ColorForKey ("string", UIColor.Black);
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void NumberForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().NumberForKey ("string", new NSNumber(1));
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void PointForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().PointForKey ("string", new CGPoint());
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void SizeForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().SizeForKey ("string", new CGSize());
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void RectForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().RectForKey ("string", new CGRect());
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
+        }
+
+        [Test]
+        public void BoolForKeyNew ()
+        {
+          try {
+            OptimizelyiOS.Optimizely.SharedInstance().BoolForKey ("string", true);
+          } catch (Exception e) {
+            Assert.Fail (e.Message);
+          }
+          Assert.Pass ();
         }
 
         [Test]
