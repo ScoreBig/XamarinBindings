@@ -9,6 +9,7 @@ namespace OptimizelyiOS
     /** Experiment is not running on the Optimizely dashboard. Try starting the experiment on https://www.optimizely.com */
     Disabled,
     /** Experiment is running */
+    Pending,
     Running,
     /** Experiment has been deactivated
      * This can happen if
@@ -17,5 +18,13 @@ namespace OptimizelyiOS
      * (c) targeting criteria for this experiment has not been met
      */
     Deactivated
+  }
+
+  [Native]
+  public enum OptimizelyInitializationState : long
+  {
+    NotStarted,
+    Starting,
+    Started
   }
 }

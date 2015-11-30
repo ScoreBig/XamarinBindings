@@ -2,6 +2,8 @@
 using System;
 using Foundation;
 using OptimizelyiOS;
+using UIKit;
+using CoreGraphics;
 
 namespace Optimizely.iOS.Xamarin.TutorialApp.Test
 {
@@ -27,7 +29,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
     {
       try
       {
-        OptimizelyVariableKey.OptimizelyKeyWithKey("string", "string");
+        OptimizelyVariableKey.OptimizelyKeyWithKey("string", UIColor.Black);
       }
       catch (Exception e)
       {
@@ -55,7 +57,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
     {
       try
       {
-        OptimizelyVariableKey.OptimizelyKeyWithKey("string", new CoreGraphics.CGPoint(1, 1));
+        OptimizelyVariableKey.OptimizelyKeyWithKey("string", new CGPoint(1, 1));
       }
       catch (Exception e)
       {
@@ -69,7 +71,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
     {
       try
       {
-        OptimizelyVariableKey.OptimizelyKeyWithKey("string", new CoreGraphics.CGSize(100, 100));
+        OptimizelyVariableKey.OptimizelyKeyWithKey("string", new CGSize(100, 100));
       }
       catch (Exception e)
       {
@@ -83,7 +85,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
     {
       try
       {
-        OptimizelyVariableKey.OptimizelyKeyWithKey("string", new CoreGraphics.CGRect(0, 0, 100, 100));
+        OptimizelyVariableKey.OptimizelyKeyWithKey("string", new CGRect(0, 0, 100, 100));
       }
       catch (Exception e)
       {
