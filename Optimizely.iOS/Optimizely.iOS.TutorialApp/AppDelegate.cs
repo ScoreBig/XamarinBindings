@@ -47,7 +47,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp
 
             // [OPTIMIZELY] (OPTIONAL) Add this line of code to debug issues.  Please note that this line of code
             // should not be included when your app is in production
-            OptimizelyiOS.Optimizely.SharedInstance ().VerboseLogging = true;
+            OptimizelyiOS.Optimizely.SharedInstance.VerboseLogging = true;
 
             // [OPTIMIZELY] (OPTIONAL) Add this line of code if you would like to enable "Edit Mode" in your live app
             // Please note that adding this line will allow anyone to edit your app with
@@ -55,7 +55,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp
             // OptimizelyiOS.Optimizely.EnableGestureInAppStoreApp();
 
             // [OPTIMIZELY] (OPTIONAL) Customize network call timing (By default network calls are made every 2 minutes)
-            // OptimizelyiOS.Optimizely.SharedInstance().DispatchInterval = 120;
+            // OptimizelyiOS.Optimizely.SharedInstance.DispatchInterval = 120;
 
             // [OPTIMIZELY] (REQUIRED) Replace this line with your API token, and don't forget to go to
             // your target (i.e. the blue icon at the top that says TutorialApp) > Info > URL Types
@@ -134,7 +134,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp
             // This notification will be triggered once the new data file has been loaded
             Console.WriteLine (string.Format ("Data viewed {0}", notification.Name));
 
-            foreach (var data in OptimizelyiOS.Optimizely.SharedInstance().AllExperiments) {
+            foreach (var data in OptimizelyiOS.Optimizely.SharedInstance.AllExperiments) {
                 Console.WriteLine (string.Format ("All Experiments: {0}, {1}, {2}, {3}, visitedEVER: {4}, visitedCount: {5}",
                     data.ExperimentName, data.ExperimentId, data.VariationName, data.State, data.VisitedEver, data.VisitedCount));
             }
@@ -145,7 +145,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp
             // An experiment is marked as visited when a user as viewed the experience you have created
             Console.WriteLine (string.Format ("experiment visited {0}", notification.Name));
 
-            foreach (var data in OptimizelyiOS.Optimizely.SharedInstance().VisitedExperiments) {
+            foreach (var data in OptimizelyiOS.Optimizely.SharedInstance.VisitedExperiments) {
                 Console.WriteLine (string.Format ("All Experiments: {0}, {1}, {2}, {3}, visitedEVER: {4}, visitedCount: {5}",
                     data.ExperimentName, data.ExperimentId, data.VariationName, data.State, data.VisitedEver, data.VisitedCount));
             }

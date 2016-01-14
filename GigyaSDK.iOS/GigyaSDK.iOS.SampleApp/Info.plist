@@ -37,6 +37,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+	  <!--Include to allow all connections (DANGER)-->
+	  <key>NSAllowsArbitraryLoads</key>
+	      <true/>
+	</dict>
 	<key>XSAppIconAssets</key>
 	<string>Resources/Images.xcassets/AppIcons.appiconset</string>
 	<key>CFBundleURLTypes</key>
@@ -44,12 +50,12 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb1679096812377617</string>
+				<string>fb849992935048401</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>1679096812377617</string>
+	<string>849992935048401</string>
 	<key>FacebookDisplayName</key>
 	<string>Sample App</string>
 	<key>LSApplicationQueriesSchemes</key>

@@ -23,7 +23,7 @@ namespace Gigya.iOS.SampleApp
             // create a new window instance based on the screen size
             Window = new UIWindow (UIScreen.MainScreen.Bounds);
 
-            GigyaSDK.iOS.Gigya.InitWithAPIKey ("3_rISqtirXfmk6ug69voJEH5Xw5dSsjuziTYaDnK5igOA0a2Qga5Y1DbUhCH8nyyg8", UIApplication.SharedApplication, new NSDictionary ());
+            GigyaSDK.iOS.Gigya.InitWithAPIKey ("3_7w-MGt72LEHi2VzGT5pA4-QboL5_c45XZyzbciSfXroZuMO6cKuKTfRrHuzrePxf", UIApplication.SharedApplication, new NSDictionary ());
 
             // If you have defined a root view controller, set it here:
             main = new MainController ();

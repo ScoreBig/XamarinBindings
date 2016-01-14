@@ -17,7 +17,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void SharedInstance ()
         {
             try {
-                OptimizelyiOS.Optimizely.SharedInstance ();
+                var x = OptimizelyiOS.Optimizely.SharedInstance;
             } catch (Exception e) {
                 Assert.Fail (e.Message);
             }
@@ -435,7 +435,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void StringForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().StringForKey ("string", "string");
+            OptimizelyiOS.Optimizely.SharedInstance.StringForKey ("string", "string");
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -446,7 +446,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void ColorForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().ColorForKey ("string", UIColor.Black);
+            OptimizelyiOS.Optimizely.SharedInstance.ColorForKey ("string", UIColor.Black);
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -457,7 +457,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void NumberForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().NumberForKey ("string", new NSNumber(1));
+            OptimizelyiOS.Optimizely.SharedInstance.NumberForKey ("string", new NSNumber(1));
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -468,7 +468,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void PointForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().PointForKey ("string", new CGPoint());
+            OptimizelyiOS.Optimizely.SharedInstance.PointForKey ("string", new CGPoint());
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -479,7 +479,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void SizeForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().SizeForKey ("string", new CGSize());
+            OptimizelyiOS.Optimizely.SharedInstance.SizeForKey ("string", new CGSize());
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -490,7 +490,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void RectForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().RectForKey ("string", new CGRect());
+            OptimizelyiOS.Optimizely.SharedInstance.RectForKey ("string", new CGRect());
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -501,7 +501,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void BoolForKeyNew ()
         {
           try {
-            OptimizelyiOS.Optimizely.SharedInstance().BoolForKey ("string", true);
+            OptimizelyiOS.Optimizely.SharedInstance.BoolForKey ("string", true);
           } catch (Exception e) {
             Assert.Fail (e.Message);
           }
@@ -512,7 +512,7 @@ namespace Optimizely.iOS.Xamarin.TutorialApp.Test
         public void CodeTest ()
         {
             try {
-                OptimizelyiOS.Optimizely.SharedInstance ().CodeTest ("codeTestKey", new NSDictionary (), action);
+                OptimizelyiOS.Optimizely.SharedInstance.CodeTest ("codeTestKey", new NSDictionary (), action);
             } catch (Exception e) {
                 Assert.Fail (e.Message);
             }

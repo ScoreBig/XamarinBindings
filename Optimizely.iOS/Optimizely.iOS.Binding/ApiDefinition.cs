@@ -6,11 +6,11 @@ using UIKit;
 
 namespace OptimizelyiOS
 {
-  // @interface OptimizelyCodeBlocksKey : NSObject
+  // @interface OptimizelyCodeBlocksKey : NSObject 
   [BaseType(typeof(NSObject))]
   interface OptimizelyCodeBlocksKey
   {
-    // @property (readonly) NSString * key;
+    // @property (readonly) NSString * key;x`x
     [Export("key")]
     string Key { get; }
 
@@ -172,7 +172,7 @@ namespace OptimizelyiOS
     // +(instancetype)sharedInstance;
     [Static]
     [Export("sharedInstance")]
-    Optimizely SharedInstance();
+    Optimizely SharedInstance { get; }
 
     // +(void)startOptimizelyWithAPIToken:(NSString *)apiToken launchOptions:(NSDictionary *)launchOptions;
     [Static]
